@@ -1,0 +1,49 @@
+/* Estilos  para la página de plataforma uvirtual */
+.sidebar {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.category {
+    margin-bottom: 2rem;
+}
+
+.category h5 {
+ display: flex;
+ align-items: center;
+ font-weight: 400; /* Regular */
+ color: #1D3C78;
+ margin-bottom: 1rem;
+font-size: 28px; /* Tamaño de letra */
+}
+
+.category h5 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.question-list {
+    list-style: decimal;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.question-list li {
+    margin-bottom: 0.5rem;
+}
+
+.question-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: 15px; /* Tamaño de letra */
+}
+
+
+.question-list a:hover {
+    text-decoration: underline;
+}

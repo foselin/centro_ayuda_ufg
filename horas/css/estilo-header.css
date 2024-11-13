@@ -1,0 +1,131 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(163, 165, 201, 0.1);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand img {
+    max-height: 30px;
+    height: auto;
+    width: auto;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-input {
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px; 
+    min-width: 305px; 
+    font-size: 0.9rem;
+}
+
+
+.search-input::placeholder {
+    color: #1D3C78;
+    opacity: 1;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #1D3C78;
+    box-shadow: 0 0 5px rgba(0, 117, 201, 0.5);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.contact-btn {
+    background-color: #1D3C78;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.contact-btn:hover {
+    background-color: #1a2251;
+    color: white;
+}
+
+.hero-section {
+background-image: url('../images/BANNERS-06.png'); 
+background-size: cover;
+background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
+}
+
+.hero-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 600; /* Semibold */
+    text-align: center;
+}
+
+#nav-tabs {
+background-color: #1D3C78;
+display: flex;
+justify-content: center;
+padding: 10px 0;
+}
+
+#nav-tabs .tab {
+color: white;
+padding: 15px 20px;
+text-decoration: none;
+margin: 0 5px;
+border-radius: 4px;
+transition: background-color 0.3s;
+font-size: 15px;
+font-weight: 600;
+}
+
+#nav-tabs .tab:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .d-flex.align-items-center.gap-3 {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+}
