@@ -1,0 +1,64 @@
+.main--tools {
+    margin: 2rem 0;
+    width: 70vw;
+    padding: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+summary {
+  list-style: none;
+  padding: 10px 10px 10px 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1D3C78;
+  position: relative;
+}
+
+summary::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: url(/resources/icons/student-category/flecha_icono.png) no-repeat
+    center;
+  background-size: contain;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.main__icon {
+    display: inline-block; 
+    width: 2rem; 
+    height: 2rem; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.main__icon--audio {
+    background-image: url(/resources/icons/student-category/accesibility-icons/Manejo_de_audio_icono.png);
+}
+
+.main__icon--keyboard {
+    background-image: url(/resources/icons/student-category/accesibility-icons/Manejo_de_teclado_icono.png);
+}
+
+.main__icon--text {
+    background-image: url(/resources/icons/student-category/accesibility-icons/Manejo_de_texto_y_visualizacion_icono.png);
+}
+
+.main__icon--mouse {
+    background-image: url(/resources/icons/student-category/accesibility-icons/Emulacion_de_raton_icono.png);
+}

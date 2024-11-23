@@ -3,7 +3,7 @@
 
   // Cargar contenido inicial al cargar la página
 window.onload = function() {
-      cargarContenido('plataforma-uvirtual.html');
+      cargarContenido('pages/plataforma-uvirtual.html');
     };
   
   // Manejar los clics en las pestañas para cambiar contenido
