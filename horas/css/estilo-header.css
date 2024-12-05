@@ -97,7 +97,7 @@ body {
     text-align: center;
 }
 
-#nav-tabs {
+#navbarSupportedContent {
 background-color: #1D3C78;
 display: flex;
 justify-content: center;
@@ -109,7 +109,7 @@ padding: 10px 0;
     color: var(--category-bg-white);
 } 
 
-#nav-tabs .tab {
+#navbarSupportedContent .tab {
 color: white;
 padding: 15px 20px;
 text-decoration: none;
@@ -120,7 +120,7 @@ font-size: 15px;
 font-weight: 600;
 }
 
-#nav-tabs .tab:hover {
+#navbarSupportedContent .tab:hover {
 background-color: rgba(255, 255, 255, 0.1);
 }
 
