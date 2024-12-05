@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --main-orange-ufg: #ff8000;
+    --category-bg-white: #ffffff;
+}
+
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -98,6 +104,11 @@ justify-content: center;
 padding: 10px 0;
 }
 
+.footer__links {
+    text-decoration: none;
+    color: var(--category-bg-white);
+} 
+
 #nav-tabs .tab {
 color: white;
 padding: 15px 20px;
@@ -112,6 +123,71 @@ font-weight: 600;
 #nav-tabs .tab:hover {
 background-color: rgba(255, 255, 255, 0.1);
 }
+
+#footer {
+    width: 100%;
+    background-image: url("/resources/BANNERS-07.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  #footer h3,
+  #footer h5 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem; /* Ajustar tamaño para pantallas grandes */
+  }
+
+  #footer span {
+    display: block;
+    margin: 1rem 0;
+    font-size: 1rem; /* Tamaño inicial del texto */
+  }
+
+  #footer img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    #footer h3 {
+      font-size: 1.3rem; /* Reducir tamaño en tablets */
+    }
+
+    #footer h5 {
+      font-size: 1rem; /* Reducir tamaño en tablets */
+    }
+
+    #footer span {
+      font-size: 0.9rem; /* Reducir tamaño en tablets */
+    }
+
+    #footer img {
+      max-width: 150px; /* Ajustar tamaño del logo */
+    }
+  }
+
+  @media (max-width: 480px) {
+    #footer h3 {
+      font-size: 1.1rem; /* Reducir más tamaño en móviles */
+    }
+
+    #footer h5 {
+      font-size: 0.9rem; /* Reducir más tamaño en móviles */
+    }
+
+    #footer span {
+      font-size: 0.8rem; /* Reducir más tamaño en móviles */
+    }
+
+    #footer img {
+      max-width: 120px; /* Reducir tamaño del logo en móviles */
+    }
+  }
 
 
 @media (max-width: 768px) {
